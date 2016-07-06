@@ -26,45 +26,59 @@ let b = 32
 */
 // write your code here
 
+if a > b {
+    print(true)
+}
+
 
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
 */
 // write your code here
 
+print(a % b == 0)
 
 /*: Question 3
 ### 3. Print the result of y times b less than or equal to a
 */
 // write your code here
 
+print(y * b <= a)
 
 /*: Question 4
 ### 4. Print the inverse of a greater than or equal to b
 */
 // write your code here
 
-
+print(a<=b)
 
 /*: Question 5
 ### 5. Print "true" if a modulo b is equal to zero
 */
 // write your code here
-
+if a % b == 0 {
+print(true)
+}
 
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
 // write your code here
 
-
+if a/b > Int(x) {
+    print(true)
+}
 
 /*: Question 7
 ### 7. Print "true" if y divided by x is greater than three, otherwise print false
 */
 // write your code here
 
-
+if Int(x)/y > 3 {
+    print(true)
+}else {
+    print(false)
+}
 
 
 /*: Question 8
@@ -72,7 +86,9 @@ let b = 32
 */
 // write your code here
 
-
+if y > Int(x) && a/b > 9 {
+    print(true)
+}
 
 
 /*: Question 9
@@ -81,8 +97,13 @@ let b = 32
 // write your code here
 
 
-
-
+func isGreater(num1: Int, num2: Int) -> Bool {
+    if num1 > num2 {
+        return true
+    } else {
+        return false
+    }
+}
 
 
 /*: Question 10
@@ -90,6 +111,14 @@ let b = 32
 */
 // write your code here
 
+func isForceWith(word: String) -> Bool {
+    let peopleWhoMayHaveTheForce = ["Luke", "Leia", "Anakin", "Obi Wan", "Yoda", "Vader"]
+    if peopleWhoMayHaveTheForce.contains(word) {
+        return true
+    } else {
+        return false
+    }
+}
 
 
 /*: Question 11
@@ -98,8 +127,15 @@ let b = 32
 // write your code here
 
 
-
-
+func bankAccount(account1: Int, account2: Int) {
+// +10 to account1 && -10 from account2 
+    
+    if account2 >= 10 {
+        account1 + 10
+        account2 - 10
+    }
+}
+bankAccount(632, account2: 80)
 
 /*:
  Checkout the solution branch - git co solution or git checkout solution and then scroll back down to this very spot to see a link that directs you to the solutions to the above questions.
